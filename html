@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+            display: flex;
+        }
+
+        /* Side navigation bar */
+        .sidenav {
+            height: 100vh;
+            width: 200px;
+            background-color: #f1f1f1;
+            padding: 20px;
+            box-sizing: border-box;
+            position: fixed;
+        }
+
+        .sidenav a {
+            display: block;
+            color: #333;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+
+        .sidenav a:hover {
+            background-color: #ddd;
+        }
+
+        /* Main content */
+        .main {
+            margin-left: 240px; /* Same as sidenav width + padding */
+            padding: 20px;
+            width: calc(100% - 240px);
+        }
+
+        /* Image formatting */
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .caption {
+            margin-top: 10px;
+            font-style: italic;
+            color: #555;
+        }
+
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <!-- Side navigation -->
+    <div class="sidenav">
+        <h2>Menu</h2>
+        <a href="page1.html">Page 1</a>
+        <a href="page2.html">Page 2</a>
+        <a href="page3.html">Page 3</a>
+        <a href="page4.html">Page 4</a>
+    </div>
+
+    <!-- Main content -->
+    <div class="main">
+        <h1>Welcome to Our Website</h1>
+        
+        <!-- First image -->
+        <div class="image-container">
+            <img src="https://via.placeholder.com/800x400" alt="Sample Image 1">
+            <div class="caption">This is the first image on the page</div>
+        </div>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+        
+        <!-- Second image below -->
+        <div class="image-container">
+            <img src="https://via.placeholder.com/800x300" alt="Sample Image 2">
+            <div class="caption">This is the second image below the content</div>
+        </div>
+        
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+</body>
+</html>
